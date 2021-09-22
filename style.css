@@ -39,3 +39,12 @@ body {
   color: white;
   background-color: rgb(108, 12, 199);
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+}
