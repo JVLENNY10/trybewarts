@@ -53,7 +53,7 @@ main {
   background-color: blue;
 }
 
-#infos-user {
+.input-double {
   padding-bottom: 30px;
   border-bottom: 1px solid black;
 }
