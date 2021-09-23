@@ -85,15 +85,25 @@
           <div id="input-field">
             <label id="label-rate">Como você avalia a Trybewarts?</label>
           </div>
-
-          <label for="agreement" id="label-infos"
-            >Você concorda com o uso das informações acima?</label
-          >
+          <label for="user-coment" class="textarea"> Deixe seu comentário:
+            <textarea name="user-coment" id="user-coment" cols="80" rows="10" maxlength="500"></textarea>
+          </label>
+          <label for="agreement" id="label-infos">
+            Você concorda com o uso das informações acima?
+          </label>
           <input id="agreement" type="checkbox" />
         </section>
+        <button type="submit" id="submit-btn">Enviar</button>
       </form>
+      <aside>
+        <figure>
+          <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="">
+        </figure>
+      </aside>
     </main>
-
+    <footer>
+      <p>Direitos reservados à Trybewarts©</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
