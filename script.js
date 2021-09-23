@@ -11,4 +11,21 @@ function checkLogin() {
   }
 }
 
+function createRadioButtons(amount) {
+  for (let index = 1; index <= amount; index += 1) {
+    const inputField = document.querySelector('#input-field');
+    const inputRadio = document.createElement('input');
+    const labelRadio = document.createElement('label');
+
+    inputRadio.name = 'rate';
+    inputRadio.type = 'radio';
+    inputRadio.value = index;
+    labelRadio.innerHTML = index;
+
+    inputField.appendChild(inputRadio);
+    inputField.appendChild(labelRadio);
+  }
+}
+
+createRadioButtons(10);
 btnLogin.addEventListener('click', checkLogin);

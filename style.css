@@ -86,3 +86,12 @@ main {
 .inputs-hards-skills input {
   margin-right: 10px;
 }
+
+#input-field {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#input-field input , label {
+  margin-right: 5px;
+}
