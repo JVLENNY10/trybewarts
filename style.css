@@ -47,5 +47,21 @@ main {
 #evaluation-form {
   width: 675px;
   display: flex;
+  padding: 20px;
+  margin: 50px 0 0 50px;
   flex-direction: column;
+  background-color: blue;
+}
+
+.input-double {
+  display: flex;
+}
+
+.input-double input {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+#input-name {
+  margin-right: 15px;
 }
