@@ -95,3 +95,8 @@ main {
 #input-field input , label {
   margin-right: 5px;
 }
+
+#label-infos , #agreement {
+  font-size: 20px;
+  margin-top: 30px;
+}

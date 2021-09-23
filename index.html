@@ -24,7 +24,7 @@
 
   <main>
     <form id="evaluation-form">
-      <section id="infos-user">
+      <section class="input-double">
         <div id="input-names">
           <input id="input-name" placeholder="Nome">
           <input id="input-lastname" placeholder="Sobrenome">
@@ -52,8 +52,13 @@
         </div>
       </section>
 
-      <section id="input-field">
-        <label id="label-rate">Como você avalia a Trybewarts?</label>
+      <section id="input-evaluation">
+        <div id="input-field">
+          <label id="label-rate">Como você avalia a Trybewarts?</label>
+        </div>
+
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input id="agreement" type="checkbox">
       </section>
     </form>
   </main>
