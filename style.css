@@ -64,24 +64,34 @@ main {
 #evaluation-form {
   width: 675px;
   display: flex;
-  padding: 20px;
-  margin: 50px 0 0 50px;
+  padding: 25px;
   flex-direction: column;
-  background-color: silver;
-}
-
-.input-double {
-  padding-bottom: 30px;
-  border-bottom: 1px solid black;
-}
-
-#input-names {
-  display: flex;
+  border-radius: 13px;
+  background-image: url('/papiro-texture.jpg');
+  font-family: monospace;
 }
 
 .input-double input {
   flex: 1;
   margin-bottom: 15px;
+}
+
+.inputs-hards-skills input {
+  margin-right: 10px;
+}
+
+#evaluation-form input , #evaluation-form select , #evaluation-form textarea {
+  border: 1px solid rgb(201, 152, 104);
+  padding: 7px;
+}
+
+.input-double {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(201, 152, 104);
+}
+
+#input-names {
+  display: flex;
 }
 
 #input-name {
@@ -92,7 +102,7 @@ main {
   font-size: 20px;
   margin-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(201, 152, 104);
 }
 
 .inputs-hards-skills {
@@ -100,13 +110,10 @@ main {
   margin-top: 20px;
 }
 
-.inputs-hards-skills input {
-  margin-right: 10px;
-}
-
 #input-field {
   font-size: 20px;
   margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 #input-field input , label {
@@ -123,6 +130,15 @@ main {
   flex-direction: column;
 }
 
+.label-style {
+  margin-top: 25px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#submit-btn {
+  background-color: rgb(201, 152, 104);
+  padding: 7px;
 }
