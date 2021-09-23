@@ -24,11 +24,33 @@
 
   <main>
     <form id="evaluation-form">
-      <div class="input-double">
-        <input id="input-name" placeholder="Nome">
-        <input id="input-lastname" placeholder="Sobrenome">
-      </div>
-      <input id="input-emai" placeholder="Email">
+      <section id="infos-user">
+        <div id="input-names">
+          <input id="input-name" placeholder="Nome">
+          <input id="input-lastname" placeholder="Sobrenome">
+        </div>
+
+        <input id="input-email" placeholder="Email">
+      </section>
+
+      <section id="hards-skills-family">
+        <label id="label-family">Qual sua família?</label>
+
+        <div class="inputs-hards-skills">
+          <input name="family" id="frontend" type="radio" value="Frontend">
+          <label for="frontend" class="input-label">Família Frontend</label>
+        </div>
+
+        <div class="inputs-hards-skills">
+          <input name="family" id="backend" type="radio" value="Backend">
+          <label for="backend" class="input-label">Família Backend</label>
+        </div>
+
+        <div class="inputs-hards-skills">
+          <input name="family" id="full-stack" type="radio" value="FullStack">
+          <label for="full-stack" class="input-label">Família Full-Stack</label>
+        </div>
+      </section>
     </form>
   </main>
 
