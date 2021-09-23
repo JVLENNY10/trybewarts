@@ -1,69 +1,99 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trybewarts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Trybewarts</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header class="header">
+      <img
+        class="trybewarts-header-logo"
+        src="images/trybewarts-header-logo.svg"
+      />
 
-<body>
-  <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login">
+        <input name="email" id="email" placeholder="Email" />
+        <input name="password" id="password" placeholder="Senha" />
 
-    <form class="trybewarts-login">
-      <input name="email" id="email" placeholder="Email">
-      <input name="password" id="password" placeholder="Senha">
+        <button id="btn-login">Entrar</button>
+      </form>
+    </header>
 
-      <button id="btn-login">Entrar</button>
-    </form>
-  </header>
+    <main>
+      <form id="evaluation-form">
+        <section class="input-double">
+          <div id="input-names">
+            <input id="input-name" placeholder="Nome" />
+            <input id="input-lastname" placeholder="Sobrenome" />
+          </div>
+          <div>
+            <input id="input-email" placeholder="Email" />
+            <select name="tech-house" id="house">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </div>
+        </section>
 
-  <main>
-    <form id="evaluation-form">
-      <section class="input-double">
-        <div id="input-names">
-          <input id="input-name" placeholder="Nome">
-          <input id="input-lastname" placeholder="Sobrenome">
-        </div>
+        <section id="hards-skills-family">
+          <label id="label-family">Qual sua família?</label>
 
-        <input id="input-email" placeholder="Email">
-      </section>
+          <div class="inputs-hards-skills">
+            <input name="family" id="frontend" type="radio" value="Frontend" />
+            <label for="frontend" class="input-label">Família Frontend</label>
+          </div>
 
-      <section id="hards-skills-family">
-        <label id="label-family">Qual sua família?</label>
+          <div class="inputs-hards-skills">
+            <input name="family" id="backend" type="radio" value="Backend" />
+            <label for="backend" class="input-label">Família Backend</label>
+          </div>
 
-        <div class="inputs-hards-skills">
-          <input name="family" id="frontend" type="radio" value="Frontend">
-          <label for="frontend" class="input-label">Família Frontend</label>
-        </div>
+          <div class="inputs-hards-skills">
+            <input
+              name="family"
+              id="full-stack"
+              type="radio"
+              value="FullStack"
+            />
+            <label for="full-stack" class="input-label"
+              >Família Full-Stack</label
+            >
+          </div>
+          <div id="content-container">
+            <label for="content" id="label-content">
+              Qual conteúdo você está com mais vontade de aprender?
+            </label>
+            <div id="content-input">
+              <input type="checkbox" name="content" value="HoFs" />HoFs
+              <input type="checkbox" name="content" value="Jest" />Jest
+              <input type="checkbox" name="content" value="Promises" /> Promises
+              <input type="checkbox" name="content" value="React" /> React
+              <input type="checkbox" name="content" value="SQL" /> SQL
+              <input type="checkbox" name="content" value="Python" /> Python
+            </div>
+          </div>
+        </section>
 
-        <div class="inputs-hards-skills">
-          <input name="family" id="backend" type="radio" value="Backend">
-          <label for="backend" class="input-label">Família Backend</label>
-        </div>
+        <section id="input-evaluation">
+          <div id="input-field">
+            <label id="label-rate">Como você avalia a Trybewarts?</label>
+          </div>
 
-        <div class="inputs-hards-skills">
-          <input name="family" id="full-stack" type="radio" value="FullStack">
-          <label for="full-stack" class="input-label">Família Full-Stack</label>
-        </div>
-      </section>
+          <label for="agreement" id="label-infos"
+            >Você concorda com o uso das informações acima?</label
+          >
+          <input id="agreement" type="checkbox" />
+        </section>
+      </form>
+    </main>
 
-      <section id="input-evaluation">
-        <div id="input-field">
-          <label id="label-rate">Como você avalia a Trybewarts?</label>
-        </div>
-
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox">
-      </section>
-    </form>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -25,7 +25,8 @@ body {
   margin-right: 10px;
 }
 
-.trybewarts-login input , button {
+.trybewarts-login input,
+button {
   width: 175px;
   font-size: 18px;
   margin-right: 16px;
@@ -50,7 +51,7 @@ main {
   padding: 20px;
   margin: 50px 0 0 50px;
   flex-direction: column;
-  background-color: blue;
+  background-color: #c0c0c0;
 }
 
 .input-double {
@@ -92,11 +93,18 @@ main {
   margin-top: 30px;
 }
 
-#input-field input , label {
+#input-field input,
+label {
   margin-right: 5px;
 }
 
-#label-infos , #agreement {
+#label-infos,
+#agreement {
   font-size: 20px;
   margin-top: 30px;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
 }
