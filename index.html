@@ -30,10 +30,10 @@
             <input id="input-name" placeholder="Nome" />
             <input id="input-lastname" placeholder="Sobrenome" />
           </div>
-
+  
           <div class="input-info">
             <input id="input-email" placeholder="Email" />
-
+  
             <select name="tech-house" id="house">
               <option value="Gitnória" id="gitnoria-house">Gitnória</option>
               <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -42,30 +42,30 @@
             </select>
           </div>
         </section>
-
+  
         <section id="hards-skills-family" class="remove">
           <label id="label-family">Qual sua família?</label>
-
+  
           <div class="inputs-hards-skills">
-            <input name="family" id="frontend" type="radio" value="Frontend" />
+            <input class="family" name="family" id="frontend" type="radio" value="Frontend" />
             <label for="frontend" class="input-label">Família Frontend</label>
           </div>
-
+  
           <div class="inputs-hards-skills">
-            <input name="family" id="backend" type="radio" value="Backend" />
+            <input class="family" name="family" id="backend" type="radio" value="Backend" />
             <label for="backend" class="input-label">Família Backend</label>
           </div>
-
+  
           <div class="inputs-hards-skills">
-            <input name="family" id="full-stack" type="radio" value="FullStack" />
+            <input class="family" name="family" id="full-stack" type="radio" value="FullStack" />
             <label for="full-stack" class="input-label">Família Full-Stack</label>
           </div>
-
+  
           <div id="content-container">
             <label for="content" id="label-content" class="label-style">
               Qual conteúdo você está com mais vontade de aprender?
             </label>
-
+  
             <div id="content-input">
               <input type="checkbox" class="subject matter" name="content" value="HoFs" /> HoFs
               <input type="checkbox" class="subject matter" name="content" value="Jest" /> Jest
@@ -76,23 +76,23 @@
             </div>
           </div>
         </section>
-
+  
         <section id="input-evaluation" class="remove">
           <div id="input-field">
             <label id="label-rate">Como você avalia a Trybewarts?</label>
           </div>
-
+  
           <label for="textarea" class="textarea"> Deixe seu comentário: </label>
           <textarea name="user-coment" id="textarea" cols="80" rows="10" maxlength="500" class="label-style"></textarea>
           <label for="textarea" id="counter">500/500</label>
-
+  
           <label for="agreement" id="label-infos">
             Você concorda com o uso das informações acima?
           </label>
-
+  
           <input id="agreement" type="checkbox" class="subject" />
         </section>
-
+  
         <button type="submit" disabled="true" id="submit-btn" class="label-style remove">Enviar</button>
       </form>
     </section>

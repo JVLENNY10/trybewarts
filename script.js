@@ -55,34 +55,36 @@ function countTextArea(event) {
 }
 
 function checkChecked(element) {
-
+  const arrayItems = [];
 
   element.forEach((items) => {
     if (items.checked) {
-
+      arrayItems.push(` ${items.value}`);
     }
   });
+
+  return arrayItems;
 }
 
 // Printar os valores de cada campo pedido: Nome (Junto com o sobrenome), email, casa, familia, matérias, avaliação e observações.
 function printInformation() {
   const house = document.querySelector('#house');
   const name = document.querySelector('#input-name');
-  // const family = document.querySelectorAll('family');
-  // const matter = document.querySelectorAll('.matter');
+  const family = document.querySelectorAll('.family');
+  const matter = document.querySelectorAll('.matter');
   const email = document.querySelector('#input-email');
   const comments = document.querySelector('#textarea');
-  // const evaluation = document.querySelectorAll('.radio-btn');
+  const evaluation = document.querySelectorAll('.radio-btn');
   const lastName = document.querySelector('#input-lastname');
 
-  const informations = document.createElement('p');
+  const informations = document.createElement('div');
   const form = document.querySelector('#evaluation-form');
   form.appendChild(informations).innerHTML = `Nome: ${name.value} ${lastName.value}
   Email: ${email.value}
   Casa: ${house.value}
-  Família: 
-  Matéria: 
-  Avaliação: 
+  Família: ${checkChecked(family)}
+  Matérias: ${checkChecked(matter)}
+  Avaliação: ${checkChecked(evaluation)}
   Observações: ${comments.value}`;
 }
 
