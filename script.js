@@ -78,11 +78,13 @@ function printInformation() {
 
 function information(event) {
   event.preventDefault();
-  const form = document.querySelector('#evaluation-form');
+  const remove = document.querySelectorAll('.remove');
 
   printInformation();
 
-  form.remove();
+  remove.forEach((items) => {
+    items.remove();
+  });
 }
 
 createRadioButtons(10);
