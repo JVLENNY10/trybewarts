@@ -18,7 +18,7 @@ footer {
   display: flex;
   padding: 10px 0;
   justify-content: space-between;
-  background-image: url('/brick-pixel.jpeg');
+  background-image: url('brick-pixel.jpeg');
   background-color: rgb(50, 167, 145);
 }
 
@@ -56,18 +56,18 @@ main {
   justify-content: center;
   align-items: center;
   padding: 105px;
-  background: linear-gradient(#00000070, rgba(0, 0, 0, 0.4 )), url('/hogwarts-pixel.jpeg');
+  background: linear-gradient(#00000070, rgba(0, 0, 0, 0.4 )), url('hogwarts-pixel.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#evaluation-form {
+#papiro-texture {
   width: 675px;
   display: flex;
   padding: 25px;
   flex-direction: column;
   border-radius: 13px;
-  background-image: url('/papiro-texture.jpg');
+  background-image: url('papiro-texture.jpg');
   font-family: monospace;
 }
 

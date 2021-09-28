@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Trybewarts</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <img
-        class="trybewarts-header-logo"
-        src="images/trybewarts-header-logo.svg"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <title>Trybewarts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
+<body>
+  <header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" />
 
-      <form class="trybewarts-login">
-        <input name="email" id="email" placeholder="Email" />
-        <input name="password" id="password" placeholder="Senha" />
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-        <button id="btn-login">Entrar</button>
-      </form>
-    </header>
-    <main>
+    <form class="trybewarts-login">
+      <input name="email" id="email" placeholder="Email" />
+      <input name="password" id="password" placeholder="Senha" />
+
+      <button id="btn-login">Entrar</button>
+    </form>
+  </header>
+
+  <main>
+    <section id="papiro-texture">
       <form id="evaluation-form">
         <section class="input-double">
           <div id="input-names">
             <input id="input-name" placeholder="Nome" />
             <input id="input-lastname" placeholder="Sobrenome" />
           </div>
+
           <div class="input-info">
             <input id="input-email" placeholder="Email" />
+
             <select name="tech-house" id="house">
               <option value="Gitnória" id="gitnoria-house">Gitnória</option>
               <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -55,27 +57,22 @@
           </div>
 
           <div class="inputs-hards-skills">
-            <input
-              name="family"
-              id="full-stack"
-              type="radio"
-              value="FullStack"
-            />
-            <label for="full-stack" class="input-label"
-              >Família Full-Stack</label
-            >
+            <input name="family" id="full-stack" type="radio" value="FullStack" />
+            <label for="full-stack" class="input-label">Família Full-Stack</label>
           </div>
+
           <div id="content-container">
             <label for="content" id="label-content" class="label-style">
               Qual conteúdo você está com mais vontade de aprender?
             </label>
+
             <div id="content-input">
-              <input type="checkbox" name="content" value="HoFs" />HoFs
-              <input type="checkbox" name="content" value="Jest" />Jest
-              <input type="checkbox" name="content" value="Promises" /> Promises
-              <input type="checkbox" name="content" value="React" /> React
-              <input type="checkbox" name="content" value="SQL" /> SQL
-              <input type="checkbox" name="content" value="Python" /> Python
+              <input type="checkbox" class="subject matter" name="content" value="HoFs" /> HoFs
+              <input type="checkbox" class="subject matter" name="content" value="Jest" /> Jest
+              <input type="checkbox" class="subject matter" name="content" value="Promises" /> Promises
+              <input type="checkbox" class="subject matter" name="content" value="React" /> React
+              <input type="checkbox" class="subject matter" name="content" value="SQL" /> SQL
+              <input type="checkbox" class="subject matter" name="content" value="Python" /> Python
             </div>
           </div>
         </section>
@@ -84,25 +81,34 @@
           <div id="input-field">
             <label id="label-rate">Como você avalia a Trybewarts?</label>
           </div>
-          <label for="user-coment" class="textarea"> Deixe seu comentário:
-            <textarea name="user-coment" id="user-coment" cols="80" rows="10" maxlength="500" class="label-style"></textarea>
-          </label>
+
+          <label for="textarea" class="textarea"> Deixe seu comentário: </label>
+          <textarea name="user-coment" id="textarea" cols="80" rows="10" maxlength="500" class="label-style"></textarea>
+          <label for="textarea" id="counter">500/500</label>
+
           <label for="agreement" id="label-infos">
             Você concorda com o uso das informações acima?
           </label>
-          <input id="agreement" type="checkbox" />
+
+          <input id="agreement" type="checkbox" class="subject" />
         </section>
-        <button type="submit" id="submit-btn" class="label-style">Enviar</button>
+
+        <button type="submit" disabled="true" id="submit-btn" class="label-style">Enviar</button>
       </form>
-      <aside>
-        <figure>
-          <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="">
-        </figure>
-      </aside>
-    </main>
-    <footer>
-      <p>Direitos reservados à Trybewarts©</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </section>
+
+    <aside>
+      <figure>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+      </figure>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
