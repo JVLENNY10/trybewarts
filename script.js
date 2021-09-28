@@ -47,11 +47,21 @@ function enableButtonSend() {
 function countTextArea(event) {
   if (event.keyCode === 8 && textArea.value.length > 0) {
     count += 1;
-  } else if (event.keyCode !== 8 && textArea.value.length < 500) {
-    count -= 1;
+  } else {
+    count = 500 - textArea.value.length;
   }
 
   counter.innerHTML = `${count}/500`;
+}
+
+function checkChecked(element) {
+
+
+  element.forEach((items) => {
+    if (items.checked) {
+
+    }
+  });
 }
 
 // Printar os valores de cada campo pedido: Nome (Junto com o sobrenome), email, casa, familia, matérias, avaliação e observações.
@@ -90,5 +100,5 @@ function information(event) {
 createRadioButtons(10);
 btnLogin.addEventListener('click', checkLogin);
 submitBtn.addEventListener('click', information);
-textArea.addEventListener('keydown', countTextArea);
+textArea.addEventListener('keyup', countTextArea);
 checkBox.addEventListener('click', enableButtonSend);
