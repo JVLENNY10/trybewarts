@@ -66,8 +66,8 @@ function printInformation() {
   const lastName = document.querySelector('#input-lastname');
 
   const informations = document.createElement('p');
-  const papiroTexture = document.querySelector('#papiro-texture');
-  papiroTexture.appendChild(informations).innerHTML = `Nome: ${name.value} ${lastName.value}
+  const form = document.querySelector('#evaluation-form');
+  form.appendChild(informations).innerHTML = `Nome: ${name.value} ${lastName.value}
   Email: ${email.value}
   Casa: ${house.value}
   Família: 
