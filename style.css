@@ -1,113 +1,134 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
-footer {
+body {
+  background: linear-gradient(#00000070, rgba(0, 0, 0, 0.5)), url('images/hogwarts-pixel.jpeg');
   display: flex;
-  justify-content: center;
-  padding: 30px;
-  background-color: black;
-  color: bisque;
+  flex-direction: column;
 }
 
 .header {
-  height: 75px;
-  display: flex;
-  padding: 10px 0;
-  justify-content: space-between;
+  align-items: center;
   background-image: url('images/brick-pixel.jpeg');
-  background-color: rgb(50, 167, 145);
+  color: white;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
-  margin-left: 15px;
-}
-
-#trybewarts-header-title {
-  color: white;
+  height: 8vh;
+  margin-left: 35px;
 }
 
 .trybewarts-login {
+  align-items: center;
   display: flex;
-  padding: 15px 0;
-  margin-right: 10px;
+  justify-content: space-between;
+  margin-right: 35px;
+  width: 550px;
 }
 
-.trybewarts-login input , button {
-  width: 175px;
-  font-size: 18px;
-  margin-right: 16px;
+.trybewarts-login input {
   padding-left: 10px;
+}
+
+.trybewarts-login input, button {
   border: 0;
+  border-radius: 15px;
   font-family: serif;
-  border-radius: 10px;
+  font-size: 20px;
+  height: 8vh;
+  width: 170px;
 }
 
 #btn-login {
-  color: white;
   background-color: rgb(108, 12, 199);
+  color: white;
 }
 
 main {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 105px;
-  background: linear-gradient(#00000070, rgba(0, 0, 0, 0.4 )), url('images/hogwarts-pixel.jpeg');
-  background-repeat: no-repeat;
+  background: linear-gradient(#00000070, rgba(0, 0, 0, 0.5)), url('images/hogwarts-pixel.jpeg');
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0;
 }
 
 #evaluation-form {
-  width: 675px;
-  display: flex;
-  padding: 25px;
-  flex-direction: column;
-  border-radius: 13px;
   background-image: url('images/papiro-texture.jpg');
-  font-family: monospace;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  max-width: 90%;
+  min-height: 625px;
+  padding: 25px;
+  width: 675px;
 }
 
-.input-double input {
-  flex: 1;
-  margin-bottom: 15px;
-}
-
-.inputs-hards-skills input {
-  margin-right: 10px;
-}
-
-#evaluation-form input , #evaluation-form select , #evaluation-form textarea {
+#evaluation-form input, #evaluation-form select, #evaluation-form textarea {
   border: 1px solid rgb(201, 152, 104);
-  padding: 7px;
+  padding: 10px 5px;
 }
 
 .input-double {
-  padding-bottom: 30px;
   border-bottom: 1px solid rgb(201, 152, 104);
+  padding-bottom: 30px;
+}
+
+.input-double input {
+  width: 45%;
+}
+
+.input-double select {
+  width: 46.9%;
+}
+
+#input-names, .input-info {
+  display: flex;
+  justify-content: space-between;
 }
 
 #input-names {
-  display: flex;
-}
-
-#input-name {
-  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 #hards-skills-family {
+  border-bottom: 1px solid rgb(201, 152, 104);
   font-size: 20px;
   margin-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid rgb(201, 152, 104);
 }
 
 .inputs-hards-skills {
   display: flex;
+  margin: 20px 0 0 10px;
+}
+
+.inputs-hards-skills input {
+  margin-right: 5px;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  margin-top: 30px;
+}
+
+#content-input {
   margin-top: 20px;
+}
+
+#content-input input {
+  margin-left: 10px;
 }
 
 #input-field {
@@ -116,29 +137,55 @@ main {
   margin-bottom: 25px;
 }
 
-#input-field input , label {
+#values-evaluation {
+  margin: 20px 0 0 10px;
+}
+
+#values-evaluation input {
   margin-right: 5px;
 }
 
-#label-infos , #agreement {
+#values-evaluation label {
+  margin-right: 15px;
+}
+
+#textarea {
+  margin: 10px 0;
+  max-width: 95%;
+  min-height: 150px;
+}
+
+#label-infos, #agreement {
   font-size: 20px;
   margin-top: 30px;
 }
 
-#content-container {
-  display: flex;
-  flex-direction: column;
+#submit-btn {
+  background-color: rgb(201, 152, 104);
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 7px;
 }
 
-.label-style {
-  margin-top: 25px;
+#result-div {
+  margin: auto 0 auto 20px;
+}
+
+#result-div p {
+  margin-top: 50px;
+}
+
+#result-div #p0 {
+  margin-top: 0;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#submit-btn {
-  background-color: rgb(201, 152, 104);
-  padding: 7px;
+footer {
+  background-color: black;
+  color: bisque;
+  text-align: center;
+  padding: 30px 0;
 }
